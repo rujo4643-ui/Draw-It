@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="src/icon.png" type="img/png" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script defer src="js/floodFill.js"></script>
+        <script defer src="js/main.js"></script>
+
+        <title>Draw It!</title>
+    </head>
+    <body>
+        <header>
+            <img src="src/icon.png" />
+            Draw It!
+        </header>
+
+        <div id="content">
+            <div class="tools" id="set1">
+                <input id="color" type="color" />
+                <input id="width" type="text" autocomplete="off" />
+                <button id="mode"></button>
+            </div>
+
+            <div class="tools" id="set2">
+                <button id="redo"></button>
+                <button id="undo"></button>
+                <button id="clear"></button>
+                <button id="save"></button>
+            </div>
+
+            <canvas id="canvas"> </canvas>
+            <div id="cursor"><div></div></div>
+        </div>
+
+        <p>@trungdeeptry</p>
+    </body>
+</html>

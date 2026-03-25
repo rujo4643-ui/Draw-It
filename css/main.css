@@ -1,0 +1,51 @@
+@import url(../css/header.css);
+@import url(../css/content.css);
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-size: 40px 40px;
+    background-image: linear-gradient(
+            to right,
+            rgba(128, 128, 128, 0.1) 2px,
+            transparent 2px
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(128, 128, 128, 0.1) 2px,
+            transparent 2px
+        );
+
+    > *,
+    header {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: showup_body 0.8s ease-in-out 0.8s 1 forwards;
+    }
+
+    > p {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        padding: 5px;
+    }
+}
+
+@keyframes showup_body {
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
