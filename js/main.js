@@ -47,7 +47,7 @@ const switchMode = () =>
 colorInput.addEventListener("blur", switchMode);
 modeInput.addEventListener("click", () => {
     mode = mode === 1 ? 2 : mode === 2 ? 3 : 1;
-    modeInput.style.backgroundImage = `url("../src/${mode}.png")`;
+    modeInput.style.backgroundImage = `url("src/${mode}.png")`;
     switchMode();
 });
 
